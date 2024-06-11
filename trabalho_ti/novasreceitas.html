@@ -15,39 +15,41 @@
 
 <body>
   <header><a href="index.html"> <img src="_Logo.png" alt="dawdaw" class="centralizar" width="200" height="100">
-    </a></header>
-  <div class="row row-cols-1 row-cols-md-2 g-4 receitas">
-</div>
-<form id="novaReceita">
-<div id="">
-  <input type="text" class="nome" placeholder="nome...">
-</div>
-</div>
-<div id="">
-  <input type="text" class="tempo" placeholder="tempo...">
-</div>
-<div id="">
-  <input type="text" class="rendimento" placeholder="rendimento...">
-</div>
-<div id="">
-  <input type="text" class="dificuldade" placeholder="dificuldade...">
-</div>
-<div id="filtros">
-  <input type="text" class="filtro" placeholder="filtro...">
-  <button type="button" onclick="addfiltros()">Adicionar filtro</button>
-</div>
-<div id="ingredientes">
-  <input type="text" class="qtd" placeholder="Quantidade...">
-  <input type="text" class="ingd" placeholder="Ingrediente...">
-  <button type="button" onclick="adicionarBarra()">Adicionar Ingrediente</button>
-</div>
-<div id="modo_preparo">
-  <input type="text" class="modo_preparo" placeholder="modo_preparo...">
-  <button type="button" onclick="addmodo_preparo()">Adicionar modo de preparo</button>
-</div>
-<button type="submit">enviar</button>
-</form>
-<script src="novasreceitas.js"></script>
+      </a>
+  </header>
+
+  <div class="row row-cols-1 row-cols-md-2 g-4 receitas"></div>
+  <h1 class="centralizar_texto">Criação de receitas</h1>
+  <form id="novaReceita" class="novaReceita">
+    <div id="">
+      <input type="text" class="nome" placeholder="nome...">
+    </div>
+    </div>
+    <div id="">
+      <input type="text" class="tempo" placeholder="tempo...">
+    </div>
+    <div id="">
+      <input type="text" class="rendimento" placeholder="rendimento...">
+    </div>
+    <div id="">
+      <input type="text" class="dificuldade" placeholder="dificuldade...">
+    </div>
+    <div id="filtros" class="botaomais">
+      <input type="text" class="filtro" placeholder="filtro...">
+      <button type="button" onclick="addfiltros()"><img src="icons8-plus-32.png" alt=""></button>
+    </div>
+    <div id="ingredientes" class="botaomais">
+      <input type="text" class="qtd" placeholder="Quantidade...">
+      <input type="text" class="ingd" placeholder="Ingrediente...">
+      <button type="button" onclick="adicionarBarra()"><img src="icons8-plus-32.png" alt=""></button>
+    </div>
+    <div id="modo_preparo" class="botaomais">
+      <input type="text" class="modo_preparo" placeholder="modo_preparo...">
+      <button type="button" onclick="addmodo_preparo()"><img src="icons8-plus-32.png" alt=""></button>
+    </div>
+    <button type="submit" class="coloraçao">enviar</button>
+  </form>
+  <script src="novasreceitas.js"></script>
 </body>
 
 </html>
